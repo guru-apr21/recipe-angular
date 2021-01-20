@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
 
+import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ShopingListComponent } from './shoping-list/shoping-list.component';
 import { ShopingListEditComponent } from './shoping-list/shoping-list-edit/shoping-list-edit.component';
@@ -9,6 +10,7 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
+import { RecipeStartComponent } from './recipe-start/recipe-start.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +22,9 @@ import { RecipesComponent } from './recipes/recipes.component';
     RecipeDetailComponent,
     HeaderComponent,
     RecipesComponent,
+    RecipeStartComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule,AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
