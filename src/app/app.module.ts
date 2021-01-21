@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ShopingListComponent } from './shoping-list/shoping-list.component';
@@ -23,7 +24,7 @@ import { DropDownDirective } from './common/dropdown.model';
     RecipesComponent,
     DropDownDirective,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
